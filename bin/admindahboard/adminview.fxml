@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="600.0" minWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="admindahboard.adminviewcontroller">
+   <children>
+      <Label layoutX="216.0" layoutY="22.0" text="Admin Dashboard" textFill="#d40c0c">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="113.0" fitWidth="122.0" layoutX="41.0" layoutY="73.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../PC%20(2)/Downloads/1200px-Newspaper_Vendors_in_Mexico_City_March_2010.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="101.0" fitWidth="162.0" layoutX="193.0" layoutY="73.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../PC%20(2)/Downloads/834-8345249_delight-your-customers-with-inbound-marketing-happy-customers.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="101.0" fitWidth="161.0" layoutX="384.0" layoutY="73.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../PC%20(2)/Downloads/Bill_becomes_Law.gif" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="98.0" fitWidth="122.0" layoutX="41.0" layoutY="262.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../PC%20(2)/Downloads/newspaper-cartoon-clip-art-others.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="101.0" fitWidth="200.0" layoutX="200.0" layoutY="250.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../PC%20(2)/Downloads/R.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="101.0" fitWidth="102.0" layoutX="404.0" layoutY="252.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../PC%20(2)/Downloads/business-hand-receiving-money-bill-vector-8635195.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="134.0" fitWidth="122.0" layoutX="47.0" layoutY="431.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../PC%20(2)/Downloads/lh.gif" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="96.0" fitWidth="168.0" layoutX="216.0" layoutY="444.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../PC%20(2)/Downloads/ThinkstockPhotos-826228744.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="38.0" layoutY="197.0" mnemonicParsing="false" onAction="#dohawkmas" prefHeight="31.0" prefWidth="122.0" text="Hawker Master">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Button>
+      <Button layoutX="205.0" layoutY="197.0" mnemonicParsing="false" onAction="#doencus" prefHeight="31.0" prefWidth="134.0" text="Enroll Customers" />
+      <Button layoutX="384.0" layoutY="197.0" mnemonicParsing="false" onAction="#dogenbill" prefHeight="31.0" prefWidth="108.0" text="Gen.Bill" />
+      <Button layoutX="54.0" layoutY="373.0" mnemonicParsing="false" onAction="#dopepmas" prefHeight="31.0" prefWidth="108.0" text="Paper Master" />
+      <Button layoutX="209.0" layoutY="373.0" mnemonicParsing="false" onAction="#doareamas" prefHeight="31.0" prefWidth="134.0" text="Area Master" />
+      <Button layoutX="404.0" layoutY="373.0" mnemonicParsing="false" onAction="#docolbill" prefHeight="31.0" prefWidth="90.0" text="Collect Bill" />
+      <Button layoutX="54.0" layoutY="561.0" mnemonicParsing="false" onAction="#doshowhaw" prefHeight="31.0" prefWidth="122.0" text="Show Hawkers" />
+      <Button layoutX="216.0" layoutY="561.0" mnemonicParsing="false" onAction="#doshowcus" prefHeight="31.0" prefWidth="144.0" text="Customers Board" />
+      <Button layoutX="414.0" layoutY="559.0" mnemonicParsing="false" onAction="#dobillhis" prefHeight="31.0" prefWidth="98.0" text="Bill History" />
+      <ImageView fitHeight="122.0" fitWidth="119.0" layoutX="408.0" layoutY="431.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../PC%20(2)/Downloads/img_518994.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

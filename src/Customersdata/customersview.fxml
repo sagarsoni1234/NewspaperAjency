@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane minHeight="600.0" minWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17" fx:controller="Customersdata.customersviewcontroller">
+   <children>
+      <Label layoutX="207.0" layoutY="37.0" text="Customer Googler" textFill="#dc0808">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="57.0" layoutY="81.0" text="Papers" textFill="#3308dc">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="compap" layoutX="57.0" layoutY="108.0" prefWidth="150.0" />
+      <Button layoutX="266.0" layoutY="108.0" mnemonicParsing="false" onAction="#dofetch" prefHeight="27.0" prefWidth="71.0" text="Fetch">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Separator layoutX="1.0" layoutY="159.0" prefHeight="2.0" prefWidth="594.0" />
+      <Label layoutX="61.0" layoutY="175.0" text="Areas" textFill="#2b08f2">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="comarea" layoutX="61.0" layoutY="202.0" prefWidth="150.0" />
+      <Button layoutX="266.0" layoutY="202.0" mnemonicParsing="false" onAction="#dofind" prefHeight="26.0" prefWidth="71.0" text="Find" />
+      <Button layoutX="435.0" layoutY="203.0" mnemonicParsing="false" onAction="#doshow" text="Show All Records" />
+      <Separator layoutX="2.0" layoutY="254.0" prefHeight="3.0" prefWidth="594.0" />
+      <TableView fx:id="ttable" layoutX="7.0" layoutY="265.0" prefHeight="265.0" prefWidth="586.0" />
+      <Button layoutX="223.0" layoutY="559.0" mnemonicParsing="false" onAction="#gotoexcel" prefHeight="26.0" prefWidth="150.0" text="Exports to excel" />
+   </children>
+</AnchorPane>

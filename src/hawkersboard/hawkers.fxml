@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane minHeight="600.0" minWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/16" fx:controller="hawkersboard.hawkersController">
+   <children>
+      <Label layoutX="223.0" layoutY="21.0" text="Hawker&quot;s Board" textFill="#e40c21">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="coname" editable="true" layoutX="56.0" layoutY="115.0" prefWidth="150.0" />
+      <Label layoutX="56.0" layoutY="76.0" text="H.name" textFill="#111ce7">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tdress" layoutX="57.0" layoutY="192.0" prefHeight="26.0" prefWidth="498.0" />
+      <TextField fx:id="tdhaar" layoutX="56.0" layoutY="247.0" prefHeight="26.0" prefWidth="174.0" />
+      <TextField fx:id="tmob" layoutX="333.0" layoutY="248.0" prefHeight="26.0" prefWidth="186.0" />
+      <TextField fx:id="tsal" layoutX="56.0" layoutY="310.0" prefHeight="26.0" prefWidth="174.0" />
+      <DatePicker fx:id="doj" layoutX="333.0" layoutY="310.0" />
+      <TextField fx:id="tarea" layoutX="333.0" layoutY="380.0" prefHeight="26.0" prefWidth="186.0" />
+      <ComboBox fx:id="comarea" editable="true" layoutX="56.0" layoutY="381.0" onAction="#doarea" prefWidth="150.0" />
+      <Button layoutX="66.0" layoutY="469.0" mnemonicParsing="false" onAction="#dosave" prefHeight="31.0" prefWidth="68.0" text="Hired">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="204.0" layoutY="469.0" mnemonicParsing="false" onAction="#doupdate" prefHeight="31.0" prefWidth="68.0" text="Modify">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="333.0" layoutY="469.0" mnemonicParsing="false" onAction="#dodelete" prefHeight="31.0" prefWidth="68.0" text="Fired">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="449.0" layoutY="469.0" mnemonicParsing="false" onAction="#doadd" prefHeight="31.0" prefWidth="68.0" text="New">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="56.0" layoutY="156.0" text="Address" textFill="#440fd7">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="57.0" layoutY="218.0" text="Adhaar Card No." textFill="#4107ef">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="333.0" layoutY="218.0" text="Mobile Number" textFill="#3a05e7">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="56.0" layoutY="274.0" text="Salary" textFill="#3004df">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="333.0" layoutY="279.0" text="Date of Joining" textFill="#8e05ef">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="57.0" layoutY="351.0" text="Areas Available" textFill="#2c04f7">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="333.0" layoutY="351.0" text="Areas Available" textFill="#4a03f2">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="timage" fitHeight="99.0" fitWidth="128.0" layoutX="394.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true" />
+      <Button layoutX="223.0" layoutY="115.0" mnemonicParsing="false" onAction="#dosearch" text="search" />
+      <Button layoutX="432.0" layoutY="157.0" mnemonicParsing="false" onAction="#dobrowse" text="browse" />
+   </children>
+</AnchorPane>

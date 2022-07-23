@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane minHeight="500.0" minWidth="500.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17" fx:controller="billhistory.billviewcontroller">
+   <children>
+      <Label layoutX="200.0" layoutY="26.0" text="Bill History" textFill="#e40606">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="28.0" layoutY="67.0" text="Customer Mobile no" textFill="#6609e7">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tmobile" layoutX="28.0" layoutY="104.0" prefHeight="26.0" prefWidth="172.0" />
+      <Button layoutX="250.0" layoutY="105.0" mnemonicParsing="false" onAction="#gethis" text="Get History" />
+      <Separator layoutX="3.0" layoutY="150.0" prefHeight="14.0" prefWidth="492.0" />
+      <RadioButton fx:id="tpaid" layoutX="28.0" layoutY="182.0" mnemonicParsing="false" onAction="#dopaid" text="Paid" textFill="#4c04e7">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="discGroup" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="tunpaid" layoutX="136.0" layoutY="182.0" mnemonicParsing="false" onAction="#dounpaid" text="unpaid" textFill="#5a08df" toggleGroup="$discGroup">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </RadioButton>
+      <Button layoutX="250.0" layoutY="178.0" mnemonicParsing="false" onAction="#dofectch" prefHeight="26.0" prefWidth="76.0" text="Fetch" />
+      <Separator layoutY="226.0" prefHeight="6.0" prefWidth="501.0" />
+      <TableView fx:id="ttable" layoutX="10.0" layoutY="250.0" prefHeight="235.0" prefWidth="478.0" />
+   </children>
+</AnchorPane>
